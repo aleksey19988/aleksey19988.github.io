@@ -357,8 +357,14 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .skills_diagrams .skill {
+      width: 220px; }
+    .skills_diagrams .skill_name {
+      width: 220px; }
     .skills_diagrams .html_diagram {
       margin-right: 0px; }
+    .skills_diagrams .html_diagram img {
+      left: 25px; }
     .skills_diagrams .css_diagram {
       margin-top: 60px; }
 
