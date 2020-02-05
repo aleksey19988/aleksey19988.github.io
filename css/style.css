@@ -8,7 +8,7 @@ header {
   min-height: 800px;
   width: 100%;
   background: #000 url("../img/space.jpg") top center no-repeat;
-  background-size: 100%;
+  background-size: cover;
   position: relative; }
   header .hello {
     color: #ffffff;
