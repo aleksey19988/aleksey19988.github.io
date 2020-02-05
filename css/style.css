@@ -1,0 +1,388 @@
+* {
+  font-family: "Poiret One", cursive, "Heebo", sans-serif; }
+
+body {
+  background-color: #000; }
+
+header {
+  min-height: 800px;
+  width: 100%;
+  background: #000 url("../img/space.jpg") top center no-repeat;
+  position: relative; }
+  header .hello {
+    color: #ffffff;
+    margin-top: 85px; }
+    header .hello_header {
+      font-size: 48px; }
+    header .hello_descr {
+      font-size: 30px; }
+    header .hello_img {
+      max-height: 471px;
+      max-width: 445px;
+      margin-top: 164px; }
+  header .mail {
+    position: absolute;
+    right: 350px;
+    top: 27px;
+    font-weight: bold; }
+    header .mail img {
+      width: 25px;
+      height: 25px; }
+  header .phone {
+    position: absolute;
+    right: 100px;
+    top: 25px;
+    font-weight: bold; }
+    header .phone img {
+      width: 25px;
+      height: 25px; }
+  header .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 33px; }
+    header .social img {
+      width: 40px;
+      height: 40px;
+      margin-right: 82px; }
+      header .social img:nth-last-child(1) {
+        margin: 0; }
+
+.skills {
+  min-height: 614px;
+  padding: 34px 0 60px 0; }
+  .skills_header {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #fff; }
+  .skills_diagrams {
+    margin-top: 100px;
+    min-height: 400px; }
+    .skills_diagrams .skill {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 64px;
+      line-height: 75px;
+      color: #fff;
+      position: relative;
+      text-align: center;
+      width: 300px;
+      height: 300px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .skills_diagrams .skill_name {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 75px;
+        text-align: center;
+        color: #fff;
+        width: 300px;
+        margin-top: 14px; }
+    .skills_diagrams img {
+      position: absolute;
+      top: 0px;
+      left: 15px; }
+
+.works_header {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #ffffff;
+  text-align: center; }
+.works_img {
+  margin-top: 80px;
+  width: 100%; }
+.works_name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: #fff;
+  margin-top: 12px; }
+  .works_name span {
+    color: #EB5757; }
+.works_descr {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  margin-top: 12px; }
+.works_open {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 12px;
+  background: #EB5757;
+  border-radius: 10px;
+  border: none;
+  width: 255px;
+  height: 56px; }
+  .works_open a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px; }
+    .works_open a:hover {
+      color: #EB5757;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+  .works_open:hover {
+    background: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+  .works_open:focus {
+    background: #EB5757; }
+  .works_open:active {
+    background: #a0a0a0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+
+footer {
+  margin-top: 150px;
+  padding: 20px 0 40px 0; }
+  footer .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 33px; }
+    footer .social img {
+      width: 40px;
+      height: 40px;
+      margin-right: 82px; }
+      footer .social img:nth-last-child(1) {
+        margin: 0; }
+  footer .footer_contacts {
+    margin-top: 62px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    footer .footer_contacts img {
+      width: 25px;
+      height: 25px; }
+    footer .footer_contacts_border {
+      min-width: 50px; }
+    footer .footer_contacts_mail {
+      font-weight: bold;
+      position: static; }
+    footer .footer_contacts_phone {
+      font-weight: bold;
+      position: static; }
+  footer .footer_block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+@media (max-width: 1199px) {
+  .hello {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center; }
+
+  header .hello_img {
+    margin: 0 auto;
+    margin-top: 60px; }
+
+  .social {
+    max-width: 500px; }
+
+  .header_social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 50px; }
+
+  .skills {
+    margin-top: 80px; }
+    .skills_diagrams {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
+  .html_diagram {
+    max-width: 350px; }
+
+  .css_diagram {
+    max-width: 350px; }
+
+  .works {
+    margin-top: 80px; }
+
+  .footer_social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+@media (max-width: 991px) {
+  header .mail {
+    right: 240px; }
+  header .phone {
+    right: 26px; }
+
+  .html_diagram {
+    margin-right: 35px;
+    max-width: 310px; }
+
+  .css_diagram {
+    margin-left: 35px;
+    max-width: 310px; } }
+@media (max-width: 767px) {
+  header .hello_header {
+    font-size: 35px; }
+
+  header .hello_descr {
+    font-size: 25px; }
+
+  header .hello_img {
+    max-height: 400px;
+    max-width: 374px; }
+
+  .skills_header {
+    font-size: 35px; }
+
+  .html_diagram {
+    margin-right: 35px;
+    max-width: 250px; }
+
+  .css_diagram {
+    margin-left: 0px;
+    max-width: 250px; }
+
+  .skills_diagrams {
+    margin-top: 30px; }
+    .skills_diagrams img {
+      width: 200px; }
+    .skills_diagrams .skill {
+      width: 200px;
+      height: 200px;
+      font-size: 35px; }
+    .skills_diagrams .skill_name {
+      font-size: 35px;
+      width: 200px; }
+
+  .works_header {
+    font-size: 35px; }
+  .works img {
+    margin-top: 0px; }
+  .works_name {
+    font-size: 30px;
+    margin-top: 4px; }
+    .works_name span {
+      font-size: 30px; }
+  .works_descr {
+    font-size: 20px;
+    margin-top: 0px; }
+  .works_open {
+    max-width: 131px;
+    max-height: 39px;
+    font-size: 17px;
+    margin-bottom: 20px; } }
+@media (max-width: 575px) {
+  header .mail {
+    right: 80px;
+    white-space: nowrap; }
+  header .phone {
+    left: 110px;
+    top: 75px;
+    white-space: nowrap; }
+  header .hello {
+    margin-top: 120px; }
+    header .hello_header {
+      font-size: 30px; }
+    header .hello_descr {
+      margin-top: -40px;
+      font-size: 20px; }
+    header .hello_img {
+      max-height: 300px;
+      max-width: 274px; }
+  header .header_contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    header .header_contacts .mail {
+      position: static;
+      margin: 0 10px; }
+    header .header_contacts .phone {
+      position: static;
+      margin: 0 10px; }
+
+  .skills_diagrams {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .skills_diagrams .html_diagram {
+      margin-right: 0px; }
+    .skills_diagrams .css_diagram {
+      margin-top: 60px; }
+
+  .works_name {
+    font-size: 25px; }
+    .works_name span {
+      font-size: 25px; }
+  .works_descr {
+    font-size: 17px; }
+  .works_open {
+    max-height: 30px;
+    max-width: 120px;
+    font-size: 15px; }
+    .works_open a {
+      padding-top: 3px; }
+
+  .footer_contacts {
+    position: relative; }
+    .footer_contacts_mail {
+      white-space: nowrap;
+      position: static; }
+    .footer_contacts_phone {
+      white-space: nowrap;
+      position: static;
+      min-width: 200px;
+      text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */

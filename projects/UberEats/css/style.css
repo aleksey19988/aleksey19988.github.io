@@ -1,0 +1,227 @@
+* {
+  font-family: Roboto, serif; }
+
+header {
+  min-height: 72px;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+  header .logo {
+    max-width: 128px;
+    min-height: 13px; }
+    header .logo_img {
+      position: absolute;
+      left: 102px;
+      top: 28px; }
+  header .login {
+    position: absolute;
+    top: 22px;
+    right: 63px;
+    height: 40px;
+    width: 84px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    border-radius: 5px; }
+  header .basket {
+    position: absolute;
+    right: 5px;
+    top: 2.5px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #fff;
+    border: none; }
+
+.search {
+  margin-top: 32px; }
+  .search_text {
+    border: none;
+    border-bottom: 1px solid lightgray; }
+
+.catalog {
+  margin-top: 56px; }
+  .catalog_moscow {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px; }
+
+.restaurant {
+  height: 366px;
+  margin-top: 16px; }
+  .restaurant h2 {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D1D1D; }
+  .restaurant_menu {
+    margin-top: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #626262; }
+  .restaurant_time {
+    margin-top: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: #1D1D1D; }
+
+footer {
+  min-height: 552px;
+  width: 100%;
+  background-color: #262626;
+  margin-top: 80px;
+  position: relative; }
+
+.logo_footer {
+  margin-top: 56px;
+  margin-bottom: 41px; }
+
+.links {
+  padding: 32px 0 48px 0;
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  min-height: 220px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .links_language {
+    margin-top: 32px;
+    display: inline-block; }
+  .links_hashtag {
+    margin-top: 33px;
+    margin-right: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFF; }
+    .links_hashtag span {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #49A144; }
+    .links_hashtag a {
+      text-decoration: none;
+      color: #fff; }
+  .links_social {
+    margin-top: 17px;
+    padding: 0;
+    width: 92px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .links_social span {
+      font-size: 24px;
+      text-align: center; }
+  .links .list {
+    margin-top: 39px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    list-style-type: none; }
+    .links .list ul {
+      margin: 0; }
+    .links .list li {
+      margin-bottom: 23px; }
+      .links .list li:nth-last-child(1) {
+        margin-bottom: 0px; }
+      .links .list li a {
+        text-decoration: none;
+        color: #fff; }
+
+.apps {
+  border-bottom: 1px solid #979797; }
+  .apps_icon {
+    margin: 41px auto 39px auto; }
+  .apps a:nth-child(1) {
+    margin-right: 20px; }
+  .apps a:nth-child(2) {
+    margin-left: 20px; }
+
+.privacy_container {
+  padding: 0; }
+
+.privacy {
+  padding: 40px 0 40px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px; }
+  .privacy a {
+    text-decoration: none;
+    color: #fff; }
+
+.btn-up {
+  position: absolute;
+  bottom: 24px;
+  right: 16px; }
+
+@media (max-width: 991px) {
+  header .logo_img {
+    left: 8px;
+    top: 31px; }
+
+  header .login {
+    top: 16px; }
+
+  .search_text {
+    margin: auto; }
+
+  .row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+  .catalog_moscow {
+    font-size: 21px; } }
+@media (max-width: 767px) {
+  header .logo_img {
+    left: 8px;
+    top: 31px; }
+
+  header .basket {
+    display: none; }
+
+  header .login {
+    right: 16px; }
+
+  .search_text {
+    font-size: 15px; }
+
+  .catalog_moscow {
+    font-size: 22px; }
+
+  .restaurant img {
+    margin: 0 auto;
+    display: block; }
+  .restaurant h2, .restaurant h3 {
+    text-align: center; }
+
+  .links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .links .list ul {
+      padding: 0;
+      margin: 0; }
+
+  .privacy a {
+    padding-bottom: 24px; }
+    .privacy a:nth-last-child(1) {
+      padding: 0; } }
+
+/*# sourceMappingURL=style.css.map */
