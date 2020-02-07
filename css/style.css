@@ -175,6 +175,15 @@ footer {
       margin-right: 82px; }
       footer .social img:nth-last-child(1) {
         margin: 0; }
+  footer .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 2;
+    text-decoration: none;
+    color: #fff; }
+    footer .copyright a {
+      color: #fff; }
   footer .footer_contacts {
     margin-top: 62px;
     display: -webkit-box;
