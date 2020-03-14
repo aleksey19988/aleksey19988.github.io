@@ -157,7 +157,9 @@ nav {
         height: 140px;
         border-radius: 50%;
         border: 1px solid #e84c36;
-        position: relative; }
+        position: relative; 
+        transform: scale(.95);
+        animation: pulse 4s ease-in-out infinite;}
       .about .figures .advantage .second_circle {
         width: 120px;
         height: 120px;
@@ -244,7 +246,20 @@ nav {
       height: 225px;
       border-radius: 50%;
       border: 1px solid #e84c36;
-      position: relative; }
+      position: relative; 
+      transform: scale(.95);
+      animation: pulse 4s ease-in-out infinite;}
+    @keyframes pulse {
+      from {
+        transform: scale(.95);
+      }
+      50% {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(.95);
+      }
+    }
     .news_one_image .middle_circle {
       width: 205px;
       height: 205px;
