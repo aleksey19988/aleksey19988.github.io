@@ -8,7 +8,7 @@ header {
   min-height: 800px;
   width: 100%;
   background: #000 url("../img/space.jpg") top center no-repeat;
-  background-size: cover;
+  background-size: 100%;
   position: relative; }
   header .hello {
     color: #ffffff;
@@ -51,53 +51,6 @@ header {
       margin-right: 82px; }
       header .social img:nth-last-child(1) {
         margin: 0; }
-
-.skills {
-  min-height: 614px;
-  padding: 34px 0 60px 0; }
-  .skills_header {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 64px;
-    line-height: 75px;
-    text-align: center;
-    color: #fff; }
-  .skills_diagrams {
-    margin-top: 100px;
-    min-height: 400px; }
-    .skills_diagrams .skill {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 64px;
-      line-height: 75px;
-      color: #fff;
-      position: relative;
-      text-align: center;
-      width: 300px;
-      height: 300px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .skills_diagrams .skill_name {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 64px;
-        line-height: 75px;
-        text-align: center;
-        color: #fff;
-        width: 300px;
-        margin-top: 14px; }
-    .skills_diagrams img {
-      position: absolute;
-      top: 0px;
-      left: 15px; }
-
 .works_header {
   font-style: normal;
   font-weight: normal;
@@ -366,14 +319,8 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .skills_diagrams .skill {
-      width: 220px; }
-    .skills_diagrams .skill_name {
-      width: 220px; }
     .skills_diagrams .html_diagram {
       margin-right: 0px; }
-    .skills_diagrams .html_diagram img {
-      left: 25px; }
     .skills_diagrams .css_diagram {
       margin-top: 60px; }
 
