@@ -4,6 +4,22 @@
 body {
   background-color: #000; }
 
+.up_button {
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  width: 55px;
+  height: 55px;
+  background: url(../icons/up_button.png) center center no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 150;
+}
+
+.shown{
+  display: inline-block;
+}
 header {
   min-height: 800px;
   width: 100%;
