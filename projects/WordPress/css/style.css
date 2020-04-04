@@ -10,7 +10,7 @@
     margin: 0 auto;
 }
 .promo {
-    height: 800px;
+    min-height: 800px;
     background: lightslategray url('../img/bg/header_bg.png') center center/cover no-repeat;
     padding: 39px 0 62px 0;
 }
@@ -196,7 +196,8 @@ h2.title {
 .finish .finish_wrapper {
     margin-top: 41px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .finish .finish_wrapper .finish_item {
     max-width: 204px;
@@ -229,6 +230,10 @@ h2.title {
 .gift_icon {
     display: flex;
     justify-content: center;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
 }
 .gift .gift_text {
     margin-top: 14px;
@@ -296,6 +301,41 @@ h2.title {
 .footer .container .descr a{
     color: #888888;
 }
+ /*Анимация подарка*/
+ @-webkit-keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  @keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+/*Конец анимации*/
 
 @media (max-width: 1199px) {
     .container {
@@ -315,6 +355,18 @@ h2.title {
     }
     .title {
         line-height: 45px;
+        font-size: 30px;
+    }
+    .simple .title_big {
+        font-size: 50px;
+    }
+    .promo .promo_btn {
+        margin: 50px auto;
+        font-size: 15px;
+        width: 250px;
+        height: 50px;
+        border: none;
+        border-radius: 6px;
     }
     .optimization .optimization_text,
     .optimization .optimization_header {
@@ -355,10 +407,12 @@ h2.title {
     }
     .optimization .optimization_header {
         font-size: 25px;
+        margin-left: 250px;
     }
     .optimization .optimization_text {
         line-height: 22px;
         font-size: 15px;
+        margin-left: 250px;
     }
     .optimization .optimization_img {
         top: 70px;
@@ -408,6 +462,9 @@ h2.title {
     }
     .finish .finish_wrapper div {
         margin-top: 25px;
+    }
+    .logo img {
+        max-width: 90%;
     }
 }
 
