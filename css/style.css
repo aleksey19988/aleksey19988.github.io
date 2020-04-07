@@ -2,13 +2,9 @@
   font-family: "Poiret One", cursive, "Heebo", sans-serif; }
 
 body {
-  /* background-color: #000;  */
-  background: #360033;
-  background: linear-gradient(to right, #360033, #0b8793);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite;
+  background: #0099F7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
