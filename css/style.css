@@ -89,6 +89,8 @@ header {
       animation-timing-function: ease; 
       animation-delay: 0.2s; 
       animation-fill-mode: both;}
+    header .mail a:hover {
+      color: #fff;}
   header .phone {
     position: absolute;
     right: 100px;
@@ -108,7 +110,9 @@ header {
       animation-duration: 1.5s;
       animation-timing-function: ease; 
       animation-delay: 0.2s; 
-      animation-fill-mode: both; }
+      animation-fill-mode: both;}
+    header .phone a:hover {
+      color: #fff;}
   header .social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -121,6 +125,12 @@ header {
       width: 40px;
       height: 40px;
       margin-right: 82px; }
+    header .social a {
+      transition: transform 0.5s ease;
+    }
+    header .social a:hover {
+      transform: scale(1.2);
+    }
     header .social a:nth-child(1) {
       -webkit-animation-name: fadeIn;
       animation-name: fadeIn; 
@@ -174,7 +184,10 @@ header {
 .works_img {
   margin-top: 80px;
   width: 100%; 
-  border-radius: 1%; }
+  border-radius: 1%;
+  transition: transform 1s ease; }
+.works_img:hover {
+  transform: scale(1.05); }
 .works_name {
   font-style: normal;
   font-weight: normal;
@@ -208,21 +221,19 @@ header {
     color: #fff;
     width: 100%;
     height: 100%;
-    padding-top: 5px; }
+    padding-top: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s ease; }
     .works_open a:hover {
-      color: #EB5757;
-      -webkit-transition: 0.5s;
-      transition: 0.5s; }
+      color: #EB5757; }
   .works_open:hover {
     background: #fff;
     -webkit-transition: 0.5s;
-    transition: 0.5s; }
+    transition: 0.5s ease; }
   .works_open:focus {
     background: #EB5757; }
   .works_open:active {
-    background: #a0a0a0;
-    -webkit-transition: 0.5s;
-    transition: 0.5s; }
+    background: #a0a0a0; }
 
 footer {
   margin-top: 150px;
@@ -235,12 +246,18 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 33px; }
-    footer .social img {
-      width: 40px;
-      height: 40px;
-      margin-right: 82px; }
-      footer .social img:nth-last-child(1) {
-        margin: 0; }
+  footer .social a {
+    transition: transform 0.5s ease;
+  }
+  footer .social a:hover {
+    transform: scale(1.2);
+  }
+  footer .social img {
+    width: 40px;
+    height: 40px;
+    margin-right: 82px; }
+    footer .social img:nth-last-child(1) {
+      margin: 0; }
   footer .copyright {
     width: 100%;
     text-align: center;
@@ -262,6 +279,7 @@ footer {
     footer .footer_contacts img {
       width: 25px;
       height: 25px; }
+    
     footer .footer_contacts_border {
       min-width: 50px; }
     footer .footer_contacts_mail {
@@ -270,6 +288,10 @@ footer {
     footer .footer_contacts_phone {
       font-weight: bold;
       position: static; }
+    footer .footer_contacts_mail a:hover {
+      color: #fff;}
+    footer .footer_contacts_phone a:hover {
+      color: #fff;}
   footer .footer_block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -343,30 +365,6 @@ footer {
   header .hello_img {
     max-height: 400px;
     max-width: 374px; }
-
-  .skills_header {
-    font-size: 35px; }
-
-  .html_diagram {
-    margin-right: 35px;
-    max-width: 250px; }
-
-  .css_diagram {
-    margin-left: 0px;
-    max-width: 250px; }
-
-  .skills_diagrams {
-    margin-top: 30px; }
-    .skills_diagrams img {
-      width: 200px; }
-    .skills_diagrams .skill {
-      width: 200px;
-      height: 200px;
-      font-size: 35px; }
-    .skills_diagrams .skill_name {
-      font-size: 35px;
-      width: 200px; }
-
   .works_header {
     font-size: 35px; }
   .works img {
@@ -466,42 +464,7 @@ a {
 /*# sourceMappingURL=style.css.map */
 
 /*Анимации*/
-/*Фон сайта*/
-@-webkit-keyframes Gradient {
-0% {
-background-position: 0% 50%
-}
-50% {
-background-position: 100% 50%
-}
-100% {
-background-position: 0% 50%
-}
-}
-  
-@-moz-keyframes Gradient {
-0% {
-background-position: 0% 50%
-}
-50% {
-background-position: 100% 50%
-}
-100% {
-background-position: 0% 50%
-}
-}
-  
-@keyframes Gradient {
-0% {
-background-position: 0% 50%
-}
-50% {
-background-position: 100% 50%
-}
-100% {
-background-position: 0% 50%
-}}
-/*Анимация заголовка шапки*/
+/*Анимация появления элементов*/
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
