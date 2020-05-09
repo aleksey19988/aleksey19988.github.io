@@ -1,22 +1,19 @@
 * {
   font-family: Roboto, serif; }
-
+.container {
+  width: 100%;
+  max-width: 1200px; }
 header {
   min-height: 72px;
   margin: 0;
   padding: 0;
-  position: relative; }
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
   header .logo {
     max-width: 128px;
     min-height: 13px; }
-    header .logo_img {
-      position: absolute;
-      left: 102px;
-      top: 28px; }
   header .login {
-    position: absolute;
-    top: 22px;
-    right: 63px;
     height: 40px;
     width: 84px;
     font-style: normal;
@@ -26,9 +23,6 @@ header {
     background-color: #fff;
     border-radius: 5px; }
   header .basket {
-    position: absolute;
-    right: 5px;
-    top: 2.5px;
     height: 100%;
     padding: 0px;
     margin: 0px;
@@ -40,7 +34,8 @@ header {
   .search_text {
     border: none;
     border-bottom: 1px solid lightgray; }
-
+  .search_text:focus {
+    outline: none; }
 .catalog {
   margin-top: 56px; }
   .catalog_moscow {
@@ -52,6 +47,9 @@ header {
 .restaurant {
   height: 366px;
   margin-top: 16px; }
+  .restaurant img {
+    transition: transform 0.2s ease;
+  }
   .restaurant h2 {
     margin-top: 16px;
     font-style: normal;
@@ -73,7 +71,10 @@ header {
     font-size: 13px;
     line-height: 21px;
     color: #1D1D1D; }
-
+.restaurant:hover {
+  text-decoration: none; }
+.restaurant:hover img {
+  transform: scale(1.05); }
 footer {
   min-height: 552px;
   width: 100%;
@@ -220,8 +221,10 @@ footer {
       margin: 0; }
 
   .privacy a {
-    padding-bottom: 24px; }
+    padding-bottom: 24px; 
+    margin-left: 10px;}
     .privacy a:nth-last-child(1) {
-      padding: 0; } }
+      padding: 0;
+      margin-left: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
